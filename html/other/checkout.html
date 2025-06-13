@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../css/checkout.css">
+    <link rel="stylesheet" href="../../css/mainPage.css">
+    <script src="../../javascript/mainPage.js"></script>  
+    <script src="../../javascript/cart_storage.js"></script>
+    <title>Château Bohemia │ Objednávka</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="../../mainPage.html"><img src="../../img/logo.png" alt="logo Château Bohemia"></a>
+        </div>
+        <h1>Château Bohemia │ Objednávka</h1>
+        <div class="header-buttons">
+          <div class="menu-button" id="menuButton">☰</div>
+          <div class="cart-icon">
+              <a href="../other/checkout.html">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span id="cartCount">20</span>
+              </a>
+          </div>
+      </div>
+      
+      <div class="side-menu" id="sideMenu">
+        <nav>
+          <div class="menu-button-centered" id="closeButton">✕</div>
+          <a href="../../mainPage.html"><img src="../../img/logo.png" alt="Logo webu" class="side-menu-logo"></a>
+          <hr class="divider">
+          <ul>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle">Česká Vína<i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="../cs_wine/cs_categ.html"><strong>Červené</strong></a></li>
+                <li><a href="#sport">Růžové</a></li>
+                <li><a href="#sport">Oranžové</a></li>
+                <li><a href="#everyday">Bílé</a></li>
+                <li><a href="#everyday">Šedé</a></li>
+              </ul>
+            </li>
+            <li><a href="#fr-wines">Francouzská Vína</a></li>
+            <li><a href="#es-wines">Španělská Vína</a></li>
+            <li><a href="#nz-wines">Italská Vína</a></li>
+            <li><a href="#about">O nás</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+      </header>
+
+        <main>
+        <div class="checkout-container">
+            <div class="cart-items">
+                <h2 class="section-title">Váš košík (20 položek)</h2>
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Produkt</th>
+                            <th>Název</th>
+                            <th>Cena</th>
+                            <th>Množství</th>
+                            <th>Celkem</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="product-image" data-label="Produkt">
+                                <img src="../../img/dornfelder.jpeg" alt="Sennheiser HD 490 PRO - Černá">
+                            </td>
+                            <td data-label="Název">
+                                <div class="product-name">Château Valtice - Dornfelder</div>
+                                <div class="product-color">Druh vína: Červené</div>
+                            </td>
+                            <td data-label="Cena" class="product-price">249 Kč</td>
+                            <td data-label="Množství">
+                                <div class="quantity-control">
+                                    <button class="quantity-btn">-</button>
+                                    <span class="quantity">5</span>
+                                    <button class="quantity-btn">+</button>
+                                </div>
+                            </td>
+                            <td data-label="Celkem" class="product-price">1 245 Kč</td>
+                            <td>
+                                <button class="remove-btn">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product-image" data-label="Produkt">
+                                <img src="../../img/rulandske_modre.jpg" alt="beyerdynamic DT 1990 PRO MKI - Černá">
+                            </td>
+                            <td data-label="Název">
+                                <div class="product-name">Vinařství Maňák - Rulandské modré</div>
+                                <div class="product-color">Druh vína: Červené</div>
+                            </td>
+                            <td data-label="Cena" class="product-price">399 Kč</td>
+                            <td data-label="Množství">
+                                <div class="quantity-control">
+                                    <button class="quantity-btn">-</button>
+                                    <span class="quantity">3</span>
+                                    <button class="quantity-btn">+</button>
+                                </div>
+                            </td>
+                            <td data-label="Celkem" class="product-price">1 197 Kč</td>
+                            <td>
+                                <button class="remove-btn">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product-image" data-label="Produkt">
+                                <img src="../../img/merlot.jpg" alt="beyerdynamic DT 1990 PRO MKI - Černá">
+                            </td>
+                            <td data-label="Název">
+                                <div class="product-name">Vinařství Pavlov - Merlot</div>
+                                <div class="product-color">Druh vína: Červené</div>
+                            </td>
+                            <td data-label="Cena" class="product-price">289 Kč</td>
+                            <td data-label="Množství">
+                                <div class="quantity-control">
+                                    <button class="quantity-btn">-</button>
+                                    <span class="quantity">12</span>
+                                    <button class="quantity-btn">+</button>
+                                </div>
+                            </td>
+                            <td data-label="Celkem" class="product-price">3 468 Kč</td>
+                            <td>
+                                <button class="remove-btn">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="order-summary">
+                <h2 class="section-title">Shrnutí objednávky</h2>
+                <div class="summary-item">
+                    <span>Mezisoučet</span>
+                    <span>5 910 Kč</span>
+                </div>
+                <div class="summary-item">
+                    <span>Doprava</span>
+                    <span>150 Kč</span>
+                </div>                
+                <div class="summary-item">
+                    <span>Obaly proti poškození</span>
+                    <span>90 Kč</span>
+                </div>
+                <div class="summary-item summary-total">
+                    <span>Celkem</span>
+                    <span>6 150 Kč</span>
+                </div>
+                
+                <a href="payment.html" class="checkout-btn">Pokračovat k pokladně</a>
+                <a href="#" class="continue-shopping">nebo pokračovat v nákupu</a>
+                
+                <div class="promo-code">
+                    <h3>Máte slevový kód?</h3>
+                    <div class="promo-input">
+                        <input type="text" placeholder="Zadejte kód">
+                        <button>Použít</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>O nás</h3>
+        <p>Objevujte svět vína s námi – pečlivě vybraná vína z nejlepších vinařských oblastí světa.
+          <br>
+          <br>
+          Francie • Itálie • Španělsko • Jižní Amerika • Austrálie • Jižní Afrika</p>
+      </div>
+      <div class="footer-section">
+        <h3>Rychlé odkazy</h3>
+        <ul>
+          <li><a href="../../mainPage.html">Domů</a></li>
+          <li><a href="#products">Produkty</a></li>
+          <li><a href="#about">O nás</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+        <button id="resetCartButton" class="reset-button">Resetovat košík</button>
+      </div>
+      <div class="footer-section">
+        <h3>Kontaktujte nás</h3>
+        <p>Email: Chateaubohemia@vinice.cz</p>
+        <p>Telefon: +420 101-212-323</p>
+        <p>Adresa: Vinicová 123, Český Zámek, Český Zámek 456 78</p>
+      </div>
+      <div class="footer-section">
+        <h3>Sledujte nás</h3>
+        <div class="social-icons">
+          <a href="#" class="social-icon"><img src="../../img/facebook.png" alt="Facebook"></a>
+          <a href="#" class="social-icon"><img src="../../img/Twitter.png" alt="Twitter / X"></a>
+          <a href="#" class="social-icon"><img src="../../img/instagram.png" alt="Instagram"></a>
+          <a href="#" class="social-icon"><img src="../../img/github.png" alt="GitHub"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Château Bohemia. Všechna práva vyhrazena.</p>
+    </div>
+  </footer>
+</body>
+</html>

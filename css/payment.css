@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=League+Gothic&display=swap');
+
+body {
+    font-family: 'League Spartan', Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'League Gothic', 'Arial Narrow', Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+  }
+
+.personal-info {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #83c574;
+    outline: none;
+}
+
+.checkbox-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+.subsection-title {
+    font-size: 18px;
+    margin: 25px 0 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.hidden {
+    display: none;
+}
+
+.payment-shipping {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+.shipping-options,
+.payment-options {
+    margin-bottom: 25px;
+}
+
+.option {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+.option:hover {
+    border-color: #83c574;
+}
+
+.option input[type="radio"] {
+    display: none;
+}
+
+.option label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.option input[type="radio"]:checked + label {
+    background-color: rgba(131, 197, 116, 0.1);
+    border-color: #83c574;
+}
+
+.option-name {
+    font-weight: 500;
+}
+
+.option-price {
+    color: #666;
+}
+
+.payment-icons {
+    font-size: 24px;
+    color: #666;
+}
+
+.order-summary-widget {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #f0f0f0;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.summary-row.total {
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.back-btn {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #666;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .checkout-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .payment-shipping {
+        position: static;
+    }
+    
+    .option label {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .option-price,
+    .payment-icons {
+        margin-top: 5px;
+    }
+}

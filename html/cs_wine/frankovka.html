@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../../css/mainPage.css">
+  <link rel="stylesheet" href="../../css/products.css">
+  <link rel="icon" type="image/x-icon" href="../../img/logo.png">
+  <title>Château Bohemia | Frankovka</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="../../mainPage.html"><img src="../../img/logo.png" alt="logo Château Bohemia"></a>
+    </div>
+    <h1>Château Bohemia│ <a href="cs_categ.html">Česká vína - Červená</a></h1>
+    <div class="header-buttons">
+      <div class="menu-button" id="menuButton">☰</div>
+      <div class="cart-icon">
+          <a href="../other/checkout.html">
+              <i class="fas fa-shopping-cart"></i>
+              <span id="cartCount">20</span>
+          </a>
+      </div>
+  </div>
+  
+  <div class="side-menu" id="sideMenu">
+    <nav>
+      <div class="menu-button-centered" id="closeButton">✕</div>
+      <a href="../../mainPage.html"><img src="../../img/logo.png" alt="Logo webu" class="side-menu-logo"></a>
+      <hr class="divider">
+      <ul>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Česká Vína<i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="cs_categ.html"><strong>Červené</strong></a></li>
+            <li><a href="#sport">Růžové</a></li>
+            <li><a href="#sport">Oranžové</a></li>
+            <li><a href="#everyday">Bílé</a></li>
+            <li><a href="#everyday">Šedé</a></li>
+          </ul>
+        </li>
+        <li><a href="#fr-wines">Francouzská Vína</a></li>
+        <li><a href="#es-wines">Španělská Vína</a></li>
+        <li><a href="#nz-wines">Italská Vína</a></li>
+        <li><a href="#about">O nás</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+
+  <main class="product-detail">
+    <div class="product-image">
+      <img id="productImage" src="../../img/frankovka.jpeg" alt="Láhev vína Frankovka">
+    </div>
+    <div class="product-info">
+      <h2>Château Valtice - Frankovka</h2>
+      <p class="description">Ovocné, sametové červené víno s tóny třešní a jemného koření. Typická moravská Frankovka z vinařství Château Valtice potěší svou svěžestí a příjemně suchým závěrem. Skvěle doplní grilovaná masa, uzeniny nebo sýr s modrou plísní.</p>
+      <div class="detailed-description">
+        <h3>Detaily produktu:</h3>
+        <ul>
+          <li>Ročník: 2024</li>
+          <li>Oblast: Morava</li>
+          <li>Vinařství Château Valtice</li>
+          <li>Alkohol: 12%</li>
+          <li>Obsah cukru: Suché víno</li>
+          <li>Zbytkový cukr: 0.7 g/l</li>
+          <li>Kyseliny: 5.5 g/l</li>
+        </ul>  
+      </div>
+      <p class="price">159 Kč</p>
+      <div class="other-info">
+        <p id="inventory">Sklad: 10ks</p>
+        <p>Kód produktu: 106999</p>
+      </div>
+
+      <button id="addToCartBtn" class="add-to-cart">Přidat do košíku</button>
+    </div>
+  </main>
+
+  <div class="popup" id="addToCartPopup">
+    <div class="popup-content">
+      <button class="popup-close" id="closePopup" aria-label="Zavřít popup"></button>
+      <h3>Položka přidána do košíku</h3>
+      <p>Láhev Vína <strong>Château Valtice - Frankovka</strong> byla přidána do vašeho košíku.</p>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>O nás</h3>
+        <p>Objevujte svět vína s námi – pečlivě vybraná vína z nejlepších vinařských oblastí světa.
+          <br>
+          <br>
+          Francie • Itálie • Španělsko • Jižní Amerika • Austrálie • Jižní Afrika</p>
+      </div>
+      <div class="footer-section">
+        <h3>Rychlé odkazy</h3>
+        <ul>
+          <li><a href="../../mainPage.html">Domů</a></li>
+          <li><a href="#products">Produkty</a></li>
+          <li><a href="#about">O nás</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+        <button id="resetCartButton" class="reset-button">Resetovat košík</button>
+      </div>
+      <div class="footer-section">
+        <h3>Kontaktujte nás</h3>
+        <p>Email: Chateaubohemia@vinice.cz</p>
+        <p>Telefon: +420 101-212-323</p>
+        <p>Adresa: Vinicová 123, Český Zámek, Český Zámek 456 78</p>
+      </div>
+      <div class="footer-section">
+        <h3>Sledujte nás</h3>
+        <div class="social-icons">
+          <a href="#" class="social-icon"><img src="../../img/facebook.png" alt="Facebook"></a>
+          <a href="#" class="social-icon"><img src="../../img/Twitter.png" alt="Twitter / X"></a>
+          <a href="#" class="social-icon"><img src="../../img/instagram.png" alt="Instagram"></a>
+          <a href="#" class="social-icon"><img src="../../img/github.png" alt="GitHub"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Château Bohemia. Všechna práva vyhrazena.</p>
+    </div>
+  </footer>
+  <script src="../../javascript/mainPage.js"></script>
+  <script src="../../javascript/cart_storage.js"></script>
+</body>
+</html>

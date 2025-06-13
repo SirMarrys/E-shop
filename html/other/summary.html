@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../css/checkout.css">
+    <link rel="stylesheet" href="../../css/summary.css">
+    <link rel="stylesheet" href="../../css/mainPage.css">
+    <script src="../../javascript/mainPage.js"></script>  
+    <script src="../../javascript/cart_storage.js"></script>
+    <title>Château Bohemia │ Shrnutí objednávky</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="../../mainPage.html"><img src="../../img/logo.png" alt="logo Château Bohemia"></a>
+        </div>
+        <h1>Château Bohemia │ Shrnutí objednávky</h1>
+        <div class="header-buttons">
+          <div class="menu-button" id="menuButton">☰</div>
+          <div class="cart-icon">
+              <a href="../other/checkout.html">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span id="cartCount">20</span>
+              </a>
+          </div>
+      </div>
+      
+      <div class="side-menu" id="sideMenu">
+        <nav>
+          <div class="menu-button-centered" id="closeButton">✕</div>
+          <a href="../../mainPage.html"><img src="../../img/logo.png" alt="Logo webu" class="side-menu-logo"></a>
+          <hr class="divider">
+          <ul>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle">Česká Vína<i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="../cs_wine/cs_categ.html"><strong>Červené</strong></a></li>
+                <li><a href="#sport">Růžové</a></li>
+                <li><a href="#sport">Oranžové</a></li>
+                <li><a href="#everyday">Bílé</a></li>
+                <li><a href="#everyday">Šedé</a></li>
+              </ul>
+            </li>
+            <li><a href="#fr-wines">Francouzská Vína</a></li>
+            <li><a href="#es-wines">Španělská Vína</a></li>
+            <li><a href="#nz-wines">Italská Vína</a></li>
+            <li><a href="#about">O nás</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+        <div class="order-success">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Děkujeme za vaši objednávku!</h2>
+            <p>Vaše objednávka #CH25042305 byla úspěšně přijata.</p>
+            <p>Na váš email jsme odeslali potvrzení objednávky.</p>
+        </div>
+
+        <div class="summary-container">
+            <div class="summary-section">
+                <h2 class="section-title">Přehled objednávky</h2>
+                <div class="order-details">
+                    <div class="order-info">
+                        <div class="info-item">
+                            <span class="label">Číslo objednávky:</span>
+                            <span class="value">#CH25042305</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Datum objednávky:</span>
+                            <span class="value">23. 04. 2025</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Stav objednávky:</span>
+                            <span class="value status-pending">Čeká na zpracování</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="items-summary">
+                    <h3 class="subsection-title">Položky v objednávce</h3>
+                    <div class="items-list">
+                        <div class="item">
+                            <div class="item-image">
+                                <img src="../../img/dornfelder.jpeg" alt="Château Valtice - Dornfelder">
+                            </div>
+                            <div class="item-details">
+                                <div class="item-name">Château Valtice - Dornfelder</div>
+                                <div class="item-variant">Druh vína: Červené</div>
+                                <div class="item-price">5 × 249 Kč</div>
+                            </div>
+                            <div class="item-total">1 245 Kč</div>
+                        </div>
+                        <div class="item">
+                            <div class="item-image">
+                                <img src="../../img/rulandske_modre.jpg" alt="Vinařství Maňák - Rulandské modré">
+                            </div>
+                            <div class="item-details">
+                                <div class="item-name">Vinařství Maňák - Rulandské modré</div>
+                                <div class="item-variant">Druh vína: Červené</div>
+                                <div class="item-price">3 × 399 Kč</div>
+                            </div>
+                            <div class="item-total">1 197 Kč</div>
+                        </div>
+                        <div class="item">
+                            <div class="item-image">
+                                <img src="../../img/merlot.jpg" alt="Vinařství Pavlov - Merlot">
+                            </div>
+                            <div class="item-details">
+                                <div class="item-name">Vinařství Pavlov - Merlot</div>
+                                <div class="item-variant">Druh vína: Červené</div>
+                                <div class="item-price">12 × 289 Kč</div>
+                            </div>
+                            <div class="item-total">3 468 Kč</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="summary-sidebar">
+                <div class="customer-info">
+                    <h3 class="subsection-title">Vaše údaje</h3>
+                    <div class="contact-info">
+                        <p><strong>Jan Novák</strong></p>
+                        <p>jan.novak@email.cz</p>
+                        <p>+420 777 123 456</p>
+                    </div>
+                    
+                    <div class="address-info">
+                        <h4>Doručovací adresa</h4>
+                        <p>Vinařská 123</p>
+                        <p>Praha 5</p>
+                        <p>150 00</p>
+                    </div>
+                </div>
+                
+                <div class="shipping-payment-info">
+                    <h3 class="subsection-title">Doprava a platba</h3>
+                    <div class="shipping-info">
+                        <div class="info-item">
+                            <span class="label">Doprava:</span>
+                            <span class="value">PPL doručení domů</span>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-info">
+                        <div class="info-item">
+                            <span class="label">Platba:</span>
+                            <span class="value">Platba kartou online</span>
+                        </div>
+                        <div class="info-item payment-status">
+                            <span class="label">Stav platby:</span>
+                            <span class="value status-completed">Zaplaceno</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="total-summary">
+                    <div class="summary-row">
+                        <span>Mezisoučet:</span>
+                        <span>5 910 Kč</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Doprava:</span>
+                        <span>150 Kč</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Obaly proti poškození:</span>
+                        <span>90 Kč</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Celkem:</span>
+                        <span>6 150 Kč</span>
+                    </div>
+                </div>
+                
+                <div class="actions">
+                    <a href="../../mainPage.html" class="continue-shopping-btn">Pokračovat v nákupu</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="order-tracking">
+            <h2 class="section-title">Sledování objednávky</h2>
+            <div class="tracking-steps">
+                <div class="step completed">
+                    <div class="step-icon"><i class="fas fa-check"></i></div>
+                    <div class="step-label">Objednávka přijata</div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step current">
+                    <div class="step-icon"><i class="fas fa-box"></i></div>
+                    <div class="step-label">Zpracování objednávky</div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-truck"></i></div>
+                    <div class="step-label">Odesláno</div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-home"></i></div>
+                    <div class="step-label">Doručeno</div>
+                </div>
+            </div>
+            <div class="tracking-note">
+                <p>Stav vaší objednávky se aktualizuje automaticky. Průběh sledování můžete také zkontrolovat na vašem emailu.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>O nás</h3>
+            <p>Objevujte svět vína s námi – pečlivě vybraná vína z nejlepších vinařských oblastí světa.
+              <br>
+              <br>
+              Francie • Itálie • Španělsko • Jižní Amerika • Austrálie • Jižní Afrika</p>
+          </div>
+          <div class="footer-section">
+            <h3>Rychlé odkazy</h3>
+            <ul>
+              <li><a href="../../mainPage.html">Domů</a></li>
+              <li><a href="#products">Produkty</a></li>
+              <li><a href="#about">O nás</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <button id="resetCartButton" class="reset-button">Resetovat košík</button>
+          </div>
+          <div class="footer-section">
+            <h3>Kontaktujte nás</h3>
+            <p>Email: Chateaubohemia@vinice.cz</p>
+            <p>Telefon: +420 101-212-323</p>
+            <p>Adresa: Vinicová 123, Český Zámek, Český Zámek 456 78</p>
+          </div>
+          <div class="footer-section">
+            <h3>Sledujte nás</h3>
+            <div class="social-icons">
+              <a href="#" class="social-icon"><img src="../../img/facebook.png" alt="Facebook"></a>
+              <a href="#" class="social-icon"><img src="../../img/Twitter.png" alt="Twitter / X"></a>
+              <a href="#" class="social-icon"><img src="../../img/instagram.png" alt="Instagram"></a>
+              <a href="#" class="social-icon"><img src="../../img/github.png" alt="GitHub"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Château Bohemia. Všechna práva vyhrazena.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../css/checkout.css">
+    <link rel="stylesheet" href="../../css/payment.css">
+    <link rel="stylesheet" href="../../css/mainPage.css">
+    <script src="../../javascript/mainPage.js"></script>  
+    <script src="../../javascript/cart_storage.js"></script>
+    <script src="../../javascript/payment.js"></script>
+    <title>Château Bohemia │ Údaje a platba</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="../../mainPage.html"><img src="../../img/logo.png" alt="logo Château Bohemia"></a>
+        </div>
+        <h1>Château Bohemia │ Údaje a platba</h1>
+        <div class="header-buttons">
+          <div class="menu-button" id="menuButton">☰</div>
+          <div class="cart-icon">
+              <a href="../other/checkout.html">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span id="cartCount">20</span>
+              </a>
+          </div>
+      </div>
+      
+      <div class="side-menu" id="sideMenu">
+        <nav>
+          <div class="menu-button-centered" id="closeButton">✕</div>
+          <a href="../../mainPage.html"><img src="../../img/logo.png" alt="Logo webu" class="side-menu-logo"></a>
+          <hr class="divider">
+          <ul>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle">Česká Vína<i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="../cs_wine/cs_categ.html"><strong>Červené</strong></a></li>
+                <li><a href="#sport">Růžové</a></li>
+                <li><a href="#sport">Oranžové</a></li>
+                <li><a href="#everyday">Bílé</a></li>
+                <li><a href="#everyday">Šedé</a></li>
+              </ul>
+            </li>
+            <li><a href="#fr-wines">Francouzská Vína</a></li>
+            <li><a href="#es-wines">Španělská Vína</a></li>
+            <li><a href="#nz-wines">Italská Vína</a></li>
+            <li><a href="#about">O nás</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+        <div class="checkout-container">
+            <div class="personal-info">
+                <h2 class="section-title">Osobní údaje</h2>
+                <form id="userDataForm">
+                    <div class="form-group">
+                        <label for="firstName">Jméno *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Příjmení *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <h3 class="subsection-title">Doručovací adresa</h3>
+                    <div class="form-group">
+                        <label for="street">Ulice a číslo popisné *</label>
+                        <input type="text" id="street" name="street" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">Město *</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zip">PSČ *</label>
+                        <input type="text" id="zip" name="zip" required>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="differentBilling" name="differentBilling">
+                        <label for="differentBilling">Fakturační adresa se liší od doručovací</label>
+                    </div>
+                    
+                    <div id="billingAddressSection" class="hidden">
+                        <h3 class="subsection-title">Fakturační adresa</h3>
+                        <div class="form-group">
+                            <label for="billingStreet">Ulice a číslo popisné</label>
+                            <input type="text" id="billingStreet" name="billingStreet">
+                        </div>
+                        <div class="form-group">
+                            <label for="billingCity">Město</label>
+                            <input type="text" id="billingCity" name="billingCity">
+                        </div>
+                        <div class="form-group">
+                            <label for="billingZip">PSČ</label>
+                            <input type="text" id="billingZip" name="billingZip">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="notes">Poznámka k objednávce</label>
+                        <textarea id="notes" name="notes" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="payment-shipping">
+                <h2 class="section-title">Způsob doručení</h2>
+                <div class="shipping-options">
+                    <div class="option">
+                        <input type="radio" id="shipping1" name="shipping" value="zasilkovna" checked>
+                        <label for="shipping1">
+                            <span class="option-name">Zásilkovna</span>
+                            <span class="option-price">75 Kč</span>
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="shipping2" name="shipping" value="cpost">
+                        <label for="shipping2">
+                            <span class="option-name">Česká pošta - balík na poštu</span>
+                            <span class="option-price">120 Kč</span>
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="shipping3" name="shipping" value="ppl">
+                        <label for="shipping3">
+                            <span class="option-name">PPL doručení domů</span>
+                            <span class="option-price">150 Kč</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <h2 class="section-title">Způsob platby</h2>
+                <div class="payment-options">
+                    <div class="option">
+                        <input type="radio" id="payment1" name="payment" value="card" checked>
+                        <label for="payment1">
+                            <span class="option-name">Platba kartou online</span>
+                            <span class="payment-icons">
+                                <span class="fab fa-cc-visa" aria-hidden="true"></span>
+                                <span class="fab fa-cc-mastercard" aria-hidden="true"></span>
+                                <span class="fab fa-cc-apple-pay" aria-hidden="true"></span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="payment2" name="payment" value="paypal">
+                        <label for="payment2">
+                            <span class="option-name">PayPal</span>
+                            <span class="payment-icons">
+                                <i class="fab fa-paypal" aria-hidden="true"></i>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="payment3" name="payment" value="bank">
+                        <label for="payment3">
+                            <span class="option-name">Bankovní převod</span>
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="payment4" name="payment" value="cod">
+                        <label for="payment4">
+                            <span class="option-name">Dobírka</span>
+                            <span class="option-price">+40 Kč</span>
+                        </label>
+                    </div>
+                
+                <div class="order-summary-widget">
+                    <h3>Shrnutí objednávky</h3>
+                    <div class="summary-row">
+                        <span>Zboží celkem:</span>
+                        <span>5 910 Kč</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Doprava:</span>
+                        <span>150 Kč</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Obaly proti poškození:</span>
+                        <span>90 Kč</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Celkem k úhradě:</span>
+                        <span>6 150 Kč</span>
+                    </div>
+                    
+                    <a href="summary.html" class="checkout-btn">Dokončit objednávku</a>
+                    <a href="checkout.html" class="back-btn">Zpět do košíku</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>O nás</h3>
+            <p>Objevujte svět vína s námi – pečlivě vybraná vína z nejlepších vinařských oblastí světa.
+              <br>
+              <br>
+              Francie • Itálie • Španělsko • Jižní Amerika • Austrálie • Jižní Afrika</p>
+          </div>
+          <div class="footer-section">
+            <h3>Rychlé odkazy</h3>
+            <ul>
+              <li><a href="../../mainPage.html">Domů</a></li>
+              <li><a href="#products">Produkty</a></li>
+              <li><a href="#about">O nás</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <button id="resetCartButton" class="reset-button">Resetovat košík</button>
+          </div>
+          <div class="footer-section">
+            <h3>Kontaktujte nás</h3>
+            <p>Email: Chateaubohemia@vinice.cz</p>
+            <p>Telefon: +420 101-212-323</p>
+            <p>Adresa: Vinicová 123, Český Zámek, Český Zámek 456 78</p>
+          </div>
+          <div class="footer-section">
+            <h3>Sledujte nás</h3>
+            <div class="social-icons">
+              <a href="#" class="social-icon"><img src="../../img/facebook.png" alt="Facebook"></a>
+              <a href="#" class="social-icon"><img src="../../img/Twitter.png" alt="Twitter / X"></a>
+              <a href="#" class="social-icon"><img src="../../img/instagram.png" alt="Instagram"></a>
+              <a href="#" class="social-icon"><img src="../../img/github.png" alt="GitHub"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Château Bohemia. Všechna práva vyhrazena.</p>
+        </div>
+    </footer>
+</body>
+</html>

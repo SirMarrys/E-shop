@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/mainPage.css">
+  <link rel="icon" type="x-icon/image" href="img/logo.png">
+  <title>Château Bohemia</title>
+</head>
+<body>
+  
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Château Bohemia Logo">
+    </div>
+    <h1>Château Bohemia</h1>
+      <div class="header-buttons">
+        <div class="menu-button" id="menuButton">☰</div>
+        <div class="cart-icon">
+            <a href="html/other/checkout.html">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cartCount">20</span>
+            </a>
+        </div>
+    </div>
+  
+    <div class="side-menu" id="sideMenu">
+      <nav>
+        <div class="menu-button-centered" id="closeButton">✕</div>
+        <a href="mainPage.html"><img src="img/logo.png" alt="Logo webu" class="side-menu-logo"></a>
+        <hr class="divider">
+        <ul>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Česká Vína<i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="html/cs_wine/cs_categ.html"><strong>Červené</strong></a></li>
+              <li><a href="#sport">Růžové</a></li>
+              <li><a href="#sport">Oranžové</a></li>
+              <li><a href="#everyday">Bílé</a></li>
+              <li><a href="#everyday">Šedé</a></li>
+            </ul>
+          </li>
+          <li><a href="#fr-wines">Francouzská Vína</a></li>
+          <li><a href="#es-wines">Španělská Vína</a></li>
+          <li><a href="#nz-wines">Italská Vína</a></li>
+          <li><a href="#about">O nás</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="content">
+      <div class="upper-content-grid">
+        <div class="grid-layout">
+          <div id="item-1" class="item-container">
+            <a href="#">
+              <img src="img/taste.png" alt="Ochutnávka nových vín">
+              <div class="text-overlay">
+                <h3>Ochutnávky Vín</h3>
+              </div>
+            </a>
+          </div>
+          <div id="item-2" class="item-container">
+            <a href="#">
+              <img src="img/limited.png" alt="Speciální limitovaná edice vína">
+              <div class="text-overlay">
+                <h3>Limitované Edice</h3>
+              </div>
+            </a>
+          </div>
+          <div id="item-3" class="item-container">
+            <a href="#">
+              <img src="img/clubs.png" alt="Fotka z vinného klubu">
+              <div class="text-overlay">
+                <h3>Vinné Kluby</h3>
+              </div>
+            </a>
+          </div>
+          <div id="item-4" class="item-container">
+            <a href="#">
+              <img src="img/gift_boxes.png" alt="obrázek vinných balíčků">
+              <div class="text-overlay">
+                <h3>Dárkové Balíčky</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <section class="lower-section">
+        <a href="#french" class="category-column" style="background-image: url('img/french_wines_bg.png');">
+          <div class="category-content">
+            <h2>Francouzská Vína</h2>
+          </div>
+        </a>
+        <a href="html/cs_wine/cs_categ.html" class="category-column" style="background-image: url('img/czech_wines_bg.png');">
+          <div class="category-content">
+            <h2>Česká Vína</h2>
+          </div>
+        </a>
+        <a href="#italian" class="category-column" style="background-image: url('img/italian_wines_bg.png');">
+          <div class="category-content">
+            <h2>Italská Vína</h2>
+          </div>
+        </a>
+  
+      </section>
+    </div>
+  
+    <section class="recommended">
+      <h2>Doporučené produkty</h2>
+      <p class="flip-helper">Klikněte na kartu pro zobrazení více detailů</p>
+      <div class="flip-card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/palava-slamove-vino.jpg" alt="Láhev vína Pálava slámové víno">
+              <h3>Réva Rakvice - Pálava slámové víno</h3>
+              <p class="price">550 Kč</p>
+              <div class="flip-icon">&#8635;</div>
+            </div>
+            <div class="flip-card-back">
+              <h3>Réva Rakvice - Pálava slámové víno</h3>
+              <p>Vyzkoušejte jedinečné Pálavé slámové víno od Réva Rakvice. Toto víno, vyrobené tradičním způsobem, vás ohromí svou intenzivní sladkostí a bohatou aromatikou medu, sušeného ovoce a květin. S jemně vyváženou kyselinkou je ideální volbou k dezertům nebo jako příjemné zakončení slavnostních okamžiků.</p>
+              <a href="#" class="buy-button">Koupit</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/frankovka.jpeg" alt="Láhev vína Frankovka">
+              <h3>Château Valtice - Frankovka</h3>
+              <p class="price">159 Kč</p>
+              <div class="flip-icon">&#8635;</div>
+            </div>
+            <div class="flip-card-back">
+              <h3>Château Valtice - Frankovka</h3>
+              <p>Objevte jedinečnou chuť Frankovky z Château Valtice. S bohatým ovocným charakterem a jemnou tříslovinou je ideální volbou pro milovníky kvalitních vín. Užijte si skvělé okamžiky s tímto výjimečným vínem, které přináší kousek vinařské tradice.</p>
+              <a href="html/cs_wine/frankovka.html" class="buy-button">Koupit</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/brunello-di-montalcino.jpg" alt="Láhev vína Brunello di Motalcino">
+              <h3>Piccini Brunello di Montalcino DOCG</h3>
+              <p class="price">1300 Kč</p>
+              <div class="flip-icon">&#8635;</div>
+            </div>
+            <div class="flip-card-back">
+              <h3>Piccini Brunello di Montalcino DOCG</h3>
+              <p>Objevte výjimečné Piccini Brunello di Montalcino DOCG, víno, které představuje srdce toskánské tradice. S bohatým tělem, komplexními tóny zralého ovoce, koření a jemného dřeva, toto víno nabízí nezapomenutelný zážitek. Ideální pro náročné milovníky vína, kteří ocení jeho vyváženost a dlouhý závěr.</p>
+              <a href="#" class="buy-button">Koupit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>O nás</h3>
+      <p>Objevujte svět vína s námi – pečlivě vybraná vína z nejlepších vinařských oblastí světa.
+        <br>
+        <br>
+        Francie • Itálie • Španělsko • Jižní Amerika • Austrálie • Jižní Afrika</p>
+    </div>
+    <div class="footer-section">
+      <h3>Rychlé odkazy</h3>
+      <ul>
+        <li><a href="mainPage.html">Domů</a></li>
+        <li><a href="#products">Produkty</a></li>
+        <li><a href="#about">O nás</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+      <button id="resetCartButton" class="reset-button">Resetovat košík</button>
+    </div>
+    <div class="footer-section">
+      <h3>Kontaktujte nás</h3>
+      <p>Email: Chateaubohemia@vinice.cz</p>
+      <p>Telefon: +420 101-212-323</p>
+      <p>Adresa: Vinicová 123, Český Zámek, Český Zámek 456 78</p>
+    </div>
+    <div class="footer-section">
+      <h3>Sledujte nás</h3>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="#" class="social-icon"><img src="img/Twitter.png" alt="Twitter / X"></a>
+        <a href="#" class="social-icon"><img src="img/instagram.png" alt="Instagram"></a>
+        <a href="#" class="social-icon"><img src="img/github.png" alt="GitHub"></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Château Bohemia. Všechna práva vyhrazena.</p>
+  </div>
+</footer>
+<script src="javascript/mainPage.js"></script>
+</body>
+</html>
